@@ -1,0 +1,257 @@
+*{
+    padding:0;
+    margin:10px;
+}
+li{
+    list-style-type:none;
+}
+p{
+    text-align:right;
+}
+a {
+    text-decoration: none;
+}
+.clear{
+    clear:both;
+}
+header {
+    width: 995px;
+    height: 30px;
+    margin-top: 10px;
+}
+#logoimg {
+    margin: 5px;
+    float: left;
+}
+#logo {
+    margin-top: 30px;
+    margin-left:0px;
+    float: left;
+}
+#logo li{     
+    color: white;            
+    background-color: rgb(199, 194, 194);           
+    font-size: 18px;
+    font-weight: bold;            
+    font-family: "Trebuchet MS", Dotum, Arial; 
+}
+#top {
+    float: right;
+    margin: 10px 20px 0 0;
+}
+#content1{
+    width: 1035px;
+    height: 110px;
+    margin-top: 20px;
+    border: solid 1px #cccccc;
+}
+#content1 li{
+    display: inline;
+    margin: 50px 30px;
+}
+nav {
+width: 995px;
+height: 100px;
+margin-top: 10px;
+padding-top: 10px;
+
+}
+nav li {
+    display: inline;
+    margin: 50px 30px;
+}
+section {
+    float: left;
+    margin-top: 00px;
+    margin-left:10px;
+}
+aside{
+    float: left;
+    border : 1px solid #bbbbbb;
+    margin-top : 0px;
+}
+aside li {
+    margin-bottom: 70px;
+}
+#anc01{
+    width: 995px;
+    margin-top: 20px;
+    height: 300px;
+    border: solid 1px #cccccc;
+    
+    overflow:hidden;
+}
+#anc01 li{
+    display: inline;
+    margin: 50px 95px; 
+}
+
+#anc02{
+    width: 995px;
+    margin-top: 20px;
+    height: 1175px;
+    border: solid 1px #cccccc;
+    
+}
+#anc02 li{
+    display: inline;
+    margin: 50px 95px; 
+}
+#anc03{
+    width: 995px;
+    margin-top: 20px;
+    height: 850px;
+    border: solid 1px #cccccc;
+    
+}
+#anc03 li{
+    display: inline;
+    margin: 50px 95px; 
+}
+#anc04{
+    width: 995px;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+#anc05{
+    width: 995px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+#anc06{
+    width: 995px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+footer {
+    width: 995px;
+    height: 100px;
+    border-top: solid 1px #cccccc;
+    margin-top: 10px;
+    border: solid 1px #cccccc;
+}
+#address {
+    float: left;
+    margin: 30px 0 0 20px;
+}
+#customer {
+    float: right;
+    margin: 30px 0 0 180px;
+    padding-right: 20px;
+}
+#page {
+    width: 1010px;
+    margin: auto;
+    border: solid 0px #cccccc;
+}
+aside{
+    float: left;
+    border : 1px solid #bbbbbb;
+    margin-top : 20px;
+    margin-left: 30px; /*개인 시스템에 맞춰 조절 */
+    padding-left:30px;
+}
+aside li{
+    list-style:circle;
+    margin-top : 40px;
+    margin-bottom:60px;
+}
+.dropdown{
+    display:inline-block;
+    position:relative;
+
+    width: 0px;
+    margin : 10px;
+    padding: 15px;
+    border : none;
+    font-size: 60px;
+}
+.dropdownContents{/*child*/
+    display:none;
+    width:140px;
+    padding:0px;
+    margin:15px;
+    line-height:30x;
+    position:absolute;/*relative 요소를 찾는다*/
+    list-style:circle;
+}
+.dropdown:hover .dropdownContents{
+    display:block;
+    background-color:white;
+}
+.sticky{            
+    background-color: white;            
+    position:sticky;            
+    top:0px;        
+}
+.scale {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+}
+.scale:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+.img {height:220px; overflow:hidden }
+.img01 {height:275px; overflow:hidden }
+@keyframes textcoloranimation{
+    0%{
+        color:red;
+    }
+    40%{
+        color:yellow;
+    }
+    100%{
+        color:red;
+    }
+}
+@keyframes textcoloranimation1{
+    0%{
+        color:green;
+    }
+    25%{
+        color:yellow;
+    }
+    50%{
+        color:blue;
+    }
+    75%{
+        color:yellow;
+    }
+    100%{
+        color:green;
+    }
+}
+@keyframes textcoloranimation2{
+    0%{
+        color:greenyellow;
+    }
+    25%{
+        color:violet;
+    }
+    50%{
+        color:skyblue;
+    }
+    75%{
+        color:yellow;
+    }
+    100%{
+        color:greenyellow;
+    }
+}
+.shining01 h2{
+    animation-name:textcoloranimation;
+    animation-duration:7s;
+    animation-iteration-count:infinite;
+}
+.shining02 h2{
+    animation-name:textcoloranimation1;
+    animation-duration:7s;
+    animation-iteration-count:infinite;
+}
+.shining03 h2{
+    animation-name:textcoloranimation2;
+    animation-duration:7s;
+    animation-iteration-count:infinite;
+}
