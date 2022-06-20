@@ -240,6 +240,40 @@ aside li{
         color:greenyellow;
     }
 }
+@keyframes textcoloranimation3{
+    0%{
+        color:purple;
+    }
+    25%{
+        color:yellow;
+    }
+    50%{
+        color:blue;
+    }
+    75%{
+        color:greenyellow;
+    }
+    100%{
+        color:purple;
+    }
+}
+@keyframes textcoloranimation4{
+    0%{
+        color:blue;
+    }
+    25%{
+        color:yellow;
+    }
+    50%{
+        color:red;
+    }
+    75%{
+        color:blue;
+    }
+    100%{
+        color:yellow;
+    }
+}
 .shining01 h2{
     animation-name:textcoloranimation;
     animation-duration:7s;
@@ -252,6 +286,16 @@ aside li{
 }
 .shining03 h2{
     animation-name:textcoloranimation2;
+    animation-duration:7s;
+    animation-iteration-count:infinite;
+}
+.shining04 h2{
+    animation-name:textcoloranimation3;
+    animation-duration:7s;
+    animation-iteration-count:infinite;
+}
+.shining05 h2{
+    animation-name:textcoloranimation3;
     animation-duration:7s;
     animation-iteration-count:infinite;
 }
