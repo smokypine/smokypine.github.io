@@ -276,7 +276,7 @@ aside li{
 }
 .shining01 h2{
     animation-name:textcoloranimation;
-    animation-duration:7s;
+    animation-duration:5s;
     animation-iteration-count:infinite;
 }
 .shining02 h2{
@@ -286,16 +286,16 @@ aside li{
 }
 .shining03 h2{
     animation-name:textcoloranimation2;
-    animation-duration:7s;
+    animation-duration:6s;
     animation-iteration-count:infinite;
 }
 .shining04 h2{
     animation-name:textcoloranimation3;
-    animation-duration:7s;
+    animation-duration:5s;
     animation-iteration-count:infinite;
 }
 .shining05 h2{
     animation-name:textcoloranimation3;
-    animation-duration:7s;
+    animation-duration:6s;
     animation-iteration-count:infinite;
 }
