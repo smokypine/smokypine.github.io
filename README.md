@@ -12,7 +12,7 @@ html
 - css를 이용해 적절한 홈페이지 디자인 구성
 
 ## Organazation
-<img src = "./figure/organazation.PNG" width="80%"><br/><br/>
+<img src = "./figure/organazation.png" width="80%"><br/><br/>
 
 ## 1. Dataset
 [해양 포유류 데이터](https://www.kaggle.com/competitions/happy-whale-and-dolphin/)를 활용하여 인공지능 모델 학습
