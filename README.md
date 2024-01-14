@@ -24,107 +24,26 @@ html/css
 
 <img src = "./figure/Main02.png" width="80%"><br/><br/>
 - hovering 기능을 이용해 호버링된 이미지의 확대/축소 기능 구현.
-- textcoloranimation을 이용한 문자의 자동 색상 변화 구현<br/><br/><br/>
+- textcoloranimation을 이용한 문자의 자동 색상 변화 구현.<br/><br/><br/>
 
 <img src = "./figure/Main03.png" width="80%"><br/><br/>
-- 페이지 상단 iframe 우측의 앵커 리스트와 연동된 업다운 기능 구현
-- [상담 문의 이미지](./메인/상담.jpg)에 좌표를 지정하여 상세보기 위치를 클릭하면 ARS 상담 페이지가 출력되는 기능 구현
-- footer 로 분리하여 body 하단에 일정한 내용을 출력하였으나 다른 파일로 분리하고 일괄적으로 import를 하는 개념을 몰라 각 파일마다 각각 footer를 구현함.<br/><br/><br/><br/>
+- 페이지 상단 iframe 우측의 앵커 리스트와 연동된 업다운 기능 구현.
+- [상담 문의 이미지](./메인/상담.jpg)에 좌표를 지정하여 상세보기 위치를 클릭하면 ARS 상담 페이지가 출력되는 기능 구현.
+- footer 로 분리하여 body 하단에 일정한 내용을 출력하였으나 프로젝트 작성시 header와 footer를 다른 파일로 분리하고 일괄적으로 필요한 파일마다 import를 하는 개념을 몰라 각 파일마다 각각 footer를 구현.<br/><br/><br/><br/>
 
 ### 1-2 여행지 페이지
 <img src = "./figure/map.png" width="80%"><br/><br/>
-- iframe을 이용해 [여행지 위치](https://www.google.com/maps/place/%EB%B2%A0%ED%8A%B8%EB%82%A8+%EB%8B%A4%EB%82%AD+%ED%95%98%EC%9D%B4%EC%A9%8C%EC%9A%B0+%EA%B5%B0/@16.0247149,108.1181114,11z/data=!4m6!3m5!1s0x314219b5c59ecec1:0xfd2900156004319!8m2!3d16.0472002!4d108.2199588!16s%2Fm%2F03mbk01?hl=ko&entry=ttu)가 담긴 구글맵 삽입<br/><br/><br/>
+- iframe을 이용해 [여행지 위치](https://www.google.com/maps/place/%EB%B2%A0%ED%8A%B8%EB%82%A8+%EB%8B%A4%EB%82%AD+%ED%95%98%EC%9D%B4%EC%A9%8C%EC%9A%B0+%EA%B5%B0/@16.0247149,108.1181114,11z/data=!4m6!3m5!1s0x314219b5c59ecec1:0xfd2900156004319!8m2!3d16.0472002!4d108.2199588!16s%2Fm%2F03mbk01?hl=ko&entry=ttu)가 담긴 구글맵 삽입.<br/><br/><br/>
 
 <img src = "./figure/trip.png" width="80%"><br/><br/>
 - table 기능을 이용해 여행지 예약 페이지 작성. 추후 데이터베이스와의 연결을 통한 예약 기능을 구현하는 것을 목표로 함.<br/><br/><br/><br/>
 
-## 2. 
+## 2. 추가적 구현 목표
+1) 로그인/회원가입/마이페이지 기능.
+2) Database와의 연동을 통한 여행지/회원 관리 기능.
+3) header/footer 파일을 분리하여 import 하는 것으로 코드 최적화<br/><br/><br/><br/>
 
-Data preprocessing
-- [CLIP](http://proceedings.mlr.press/v139/radford21a/radford21a.pdf)을 이용한 image segmentation ([Image Segmentation Using Text and Image Prompts, CVPR 2022](https://openaccess.thecvf.com/content/CVPR2022/papers/Luddecke_Image_Segmentation_Using_Text_and_Image_Prompts_CVPR_2022_paper.pdf)) 기술 사용
-- Text prompt로 "dolphin" 사용 <br/>
-
-<img src = "./figures/clip_seg.PNG" width="65%"><br/><br/>
-
-- Original image를 resize하여 W,H가 같은 image 생성
-- 해당 image에 segmentation 수행하여 min, max 좌표 획득
-- Resize했던 비율을 역이용하여 original image의 bounding box 좌표 획득
-
-<img src = "./figures/clip_seg2.PNG" width="80%"><br/><br/>
-
-- Original image의 객체와 배경의 비율을 맞추기 위해 zero padding을 사용하여 crop을 하거나 image를 붙여 crop
-- 인공지능 모델의 input size를 맞추기 위해 resize 수행
-
-<img src = "./figures/clip_seg3.PNG" width="80%"><br/><br/>
-
-## 3. Re-identification & performance evaluation
-
-3-1 Overall framework
-
-- 총 4단계로 구성
-
-<img src = "./figures/Overall framework.PNG" width="80%"><br/><br/>
-
-3-2 Training settings
-```
-ResNet-18 & EfficientNet
-Input: Anchor, positive, negative data (224 x 224 images)
-Output: 512 dim features
-Triplet loss, Cross-entropy loss
-Adam optimizer, lr 0.0001, 300 epoch training
-Metric: MAP@5
-```
-
-3-3 Network structure
-
-- $L_{triplet}$과 $L_{species}$를 사용하여 multi-task learning 수행
-- $L_{triplet}$은 같은 id를 가진 개체끼리 anchor, positive 구성, 다른 id를 가진 개체의 id를 negative로 구성하여 학습
-- $L_{species}$는 30여종의 고래/돌고래 종 분류(classification) 학습
-- $\alpha$는 hyperparameter <br/>
-
-<img src = "./figures/Network structure.PNG" width="80%"><br/><br/>
-
-3-4 Make Gallery
-
-- 학습이 끝난 뒤 수행
-- 모든 train dataset을 parameter가 고정된 network에 통과시켜 features 생성
-- 같은 id의 개체 이미지 feature들을 묶어 gallery set 생성
-
-<img src = "./figures/Make Gallery.PNG" width="80%"><br/><br/>
-
-<img src = "./figures/Make Gallery2.PNG" width="80%"><br/><br/>
-
-3-5 Performance evaluation
-
-- Validation dataset으로 gallery 탐색
-  
-<img src = "./figures/Performance Evaluation.PNG" width="80%"><br/><br/>
-
-- K-nearest neighbor 알고리듬을 통해 L2 distance가 짧은 K개의 features 선정
-- MAP@5 metric에 의거해 K=5로 선정
-- Metric에 자세한 설명은 [여기](https://www.kaggle.com/code/pestipeti/explanation-of-map5-scoring-metric) 참고
-
-<img src = "./figures/Performance Evaluation2.PNG" width="80%"><br/><br/>
-
-<img src = "./figures/Performance Evaluation3.PNG" width="80%"><br/><br/>
-
-- $L_{triplet}$에 hard negative mining을 사용한 결과가 더 좋음을 확인할 수 있음
-- $||f(A)-f(P)||>|f(A)-f(N)||$인 경우에 loss를 발생시키는 것이 hard negative mining 전략
-- Margin parameter $\alpha$를 사용하지 않았을 때가 훨씬 좋음
-
-<img src = "./figures/Performance Evaluation4.PNG" width="80%"><br/><br/>
-
-## 4. Kaggle submission results
-
-- new_indivisual이란 기존 gallery에 있던 개체가 아닌 새로운 개체라고 식별되었을 때 기록
-- Re-identification task를 수행한 결과가 더 좋음을 확인할 수 있음
-- Threshold는 margin parameter $\alpha$
-
-<img src = "./figures/Test for Kaggle submission.PNG" width="80%">
-
-
-## 5. Conclusion
-
-- Text와 image를 사용하는 multimodal model을 이용하여  segmentation 진행
-- Hard negative mining을 사용하여 성능 향상
-- Classifier를 도입하여 multi-task learning 진행
+## 3. 참조 사이트
+- [모두투어](https://www.modetour.com/)
+- [하나투어[(https://www.hanatour.com/)
+- [참좋은여행](https://www.verygoodtour.com/Home/PackageMain)
