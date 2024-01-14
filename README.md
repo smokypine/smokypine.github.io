@@ -16,6 +16,9 @@ html/css
 
 ## 1. 사이트 기능
 <img src = "./figure/Main01.png" width="80%"><br/><br/>
+- header를 이용해 메뉴를 분리함.
+-
+- 로그인|회원가입|예약확인/결제|고객센터
 
 ## 2. Data preprocessing
 - [CLIP](http://proceedings.mlr.press/v139/radford21a/radford21a.pdf)을 이용한 image segmentation ([Image Segmentation Using Text and Image Prompts, CVPR 2022](https://openaccess.thecvf.com/content/CVPR2022/papers/Luddecke_Image_Segmentation_Using_Text_and_Image_Prompts_CVPR_2022_paper.pdf)) 기술 사용
