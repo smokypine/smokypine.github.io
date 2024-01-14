@@ -12,9 +12,9 @@ html
 - css를 이용해 적절한 홈페이지 디자인 구성
 
 ## Running the Code
-To train model.
+메인 페이지.
 ```
-train.py
+index.html
 ```
 To evaluate model and make gallery set.
 ```
