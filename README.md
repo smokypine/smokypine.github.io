@@ -8,22 +8,11 @@ html
 ```
 
 ## About task
-- 순수 html을 이용하여 사이트를 구현
+- html을 이용하여 사이트를 구현
 - css를 이용해 적절한 홈페이지 디자인 구성
 
-## Running the Code
-메인 페이지.
-```
-index.html
-```
-To evaluate model and make gallery set.
-```
-test.py
-```
-To evaluate MAP@5 and make gallery set for hard mining settings. 
-```
-main_hard_mining.py
-```
+## Organazation
+<img src = "./figure/organazation.PNG" width="80%"><br/><br/>
 
 ## 1. Dataset
 [해양 포유류 데이터](https://www.kaggle.com/competitions/happy-whale-and-dolphin/)를 활용하여 인공지능 모델 학습
