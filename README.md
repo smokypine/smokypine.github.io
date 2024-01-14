@@ -15,7 +15,7 @@ html/css
 <img src = "./figure/my_organazation.png" width="80%"><br/><br/>
 
 ## 1. 사이트 기능
-# 1) 메인 페이지
+### 1) 메인 페이지
 <img src = "./figure/Main01.png" width="80%"><br/><br/>
 - header를 이용해 body와 메뉴를 분리 하였으며 호버링 기능을 통해 하위 메뉴 구현.
 - iframe을 이용해 여행 광고 페이지 작성. 광고 내부의 원형 버튼을 이용해 광고 전환 가능.
@@ -31,7 +31,7 @@ html/css
 - [상담 문의 이미지](smokypine.github.io/메인/상담.jpg)에 좌표를 지정하여 상세보기 위치를 클릭하면 ARS 상담 페이지가 출력되는 기능 구현
 - footer 로 분리하여 body 하단에 일정한 내용을 출력하였으나 다른 파일로 분리하고 일괄적으로 import를 하는 개념을 몰라 각 파일마다 각각 footer를 구현함.<br/><br/><br/>
 
-# 2) 여행지 페이지
+### 2) 여행지 페이지
 
 
 ## 2. Data preprocessing
