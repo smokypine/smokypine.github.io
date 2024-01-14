@@ -1,17 +1,17 @@
-## 홈페이지 작성
-2022년에 html을 이용하여 여행 사이트를 컨셉으로 한 홈페이지를 작성하는 프로젝트를 수행하였습니다.
+## 프로젝트 개요
+2022년에 html/css을 이용하여 [여행 사이트 홈페이지](https://smokypine.github.io/)를 제작했습니다.
 
 
 ## Stack
 ```
-html
+html/css
 ```
 
 ## About task
-- html을 이용하여 사이트를 구현
-- css를 이용해 적절한 홈페이지 디자인 구성
+- html을 이용하여 홈페이지를 구현
+- css를 이용해 홈페이지 디자인 구성
 
-## Organazation
+## 조직도
 <img src = "./figure/organazation.png" width="80%"><br/><br/>
 
 ## 1. Dataset
