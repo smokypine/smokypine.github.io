@@ -16,9 +16,21 @@ html/css
 
 ## 1. 사이트 기능
 <img src = "./figure/Main01.png" width="80%"><br/><br/>
-- header를 이용해 메뉴를 분리함.
--
-- 로그인|회원가입|예약확인/결제|고객센터
+- header를 이용해 body와 메뉴를 분리 하였으며 호버링 기능을 통해 하위 메뉴 구현.
+- iframe을 이용해 여행 광고 페이지 작성. 광고 내부의 원형 버튼을 이용해 광고 전환 가능.
+- Anchor를 통한 페이지 업다운 기능 구현.
+- 로그인|회원가입|예약확인/결제|고객센터 기능은 미구현.
+
+<img src = "./figure/Main02.png" width="80%"><br/><br/>
+- hovering 기능을 이용해 호버링된 이미지의 확대/축소 기능 구현.
+- textcoloranimation을 이용한 문자의 자동 색상 변화 구현
+
+<img src = "./figure/Main03.png" width="80%"><br/><br/>
+- 페이지 상단 iframe 우측의 앵커 리스트와 연동된 업다운 기능 구현
+- [상담 문의 이미지](smokypine.github.io/메인/상담.jpg)에 좌표를 지정하여 상세보기 위치를 클릭하면 ARS 상담 페이지가 출력되는 기능 구현
+- footer 로 분리하여 body 하단에 일정한 내용을 출력하였으나 다른 파일로 분리하고 일괄적으로 import를 하는 개념을 몰라 각 파일마다 각각 footer를 구현함.
+
+
 
 ## 2. Data preprocessing
 - [CLIP](http://proceedings.mlr.press/v139/radford21a/radford21a.pdf)을 이용한 image segmentation ([Image Segmentation Using Text and Image Prompts, CVPR 2022](https://openaccess.thecvf.com/content/CVPR2022/papers/Luddecke_Image_Segmentation_Using_Text_and_Image_Prompts_CVPR_2022_paper.pdf)) 기술 사용
