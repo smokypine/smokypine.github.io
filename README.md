@@ -14,8 +14,8 @@ html/css
 ## 조직도
 <img src = "./figure/my_organazation.png" width="80%"><br/><br/>
 
-## 1. Dataset
-[해양 포유류 데이터](https://www.kaggle.com/competitions/happy-whale-and-dolphin/)를 활용하여 인공지능 모델 학습
+## 1. 사이트 기능
+<img src = "./figure/Main01.png" width="80%"><br/><br/>
 
 ## 2. Data preprocessing
 - [CLIP](http://proceedings.mlr.press/v139/radford21a/radford21a.pdf)을 이용한 image segmentation ([Image Segmentation Using Text and Image Prompts, CVPR 2022](https://openaccess.thecvf.com/content/CVPR2022/papers/Luddecke_Image_Segmentation_Using_Text_and_Image_Prompts_CVPR_2022_paper.pdf)) 기술 사용
