@@ -45,5 +45,5 @@ html/css
 
 ## 3. 참조 사이트
 - [모두투어](https://www.modetour.com/)
-- [하나투어[(https://www.hanatour.com/)
+- [하나투어](https://www.hanatour.com/)
 - [참좋은여행](https://www.verygoodtour.com/Home/PackageMain)
