@@ -1,20 +1,15 @@
-## Marin mammal re-identification project 
-2022년에 해양 포유류 재확인 (Marine mammal re-identification) 프로젝트를 수행했습니다.
-
+## 홈페이지 작성
+2022년에 html을 이용하여 여행 사이트를 컨셉으로 한 홈페이지를 작성하는 프로젝트를 수행하였습니다.
 
 
 ## Stack
 ```
-Python  
-CNN(Convolutional Neural Network)
-Segmentation
-K-Nearest neighborhood
-Pytorch
+html
 ```
 
 ## About task
-- 고래 및 돌고래 등의 개체 사진 활용
-- 새롭게 찍힌 사진에 나타나는 개체가 기존에 수집했던 자료 중 어떤 개체와 일치하는지 판정
+- 순수 html을 이용하여 사이트를 구현
+- css를 이용해 적절한 홈페이지 디자인 구성
 
 ## Running the Code
 To train model.
