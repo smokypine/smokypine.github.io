@@ -7,6 +7,11 @@
 html/css
 ```
 
+## 코드 실행
+```
+index.html
+```
+
 ## 조직도
 <img src = "./figure/my_organazation.png" width="80%"><br/>
 
